@@ -1,4 +1,4 @@
-# tomcat
+# Helloworld Tomcat Cookbook
 
-TODO: Enter the cookbook description here.
-
+This is a demo cookbook used to understand few concepts related to AWS Opsworks.
+Recipes have been written as per OpsWorks lifecycle events.
