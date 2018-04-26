@@ -13,14 +13,14 @@ verifier:
   name: inspec
 
 platforms:
-  - name: ubuntu-16.04
   - name: centos-7
 
 suites:
-  - name: default
+  - name: tomcat
     run_list:
-      - recipe[tomcat::default]
+      - recipe[tomcat::setup]
+      - recipe[tomcat::configure]
     verifier:
       inspec_tests:
-        - test/integration/default
+        - test/integration/tomcat
     attributes:
